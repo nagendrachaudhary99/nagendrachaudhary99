@@ -1,4 +1,4 @@
-name: Update public GitHub stats
+name: Update public language card
 
 on:
   push:
@@ -16,14 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Create activity card
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&theme=tokyonight
-          path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fail_on_error: true
       - name: Create language card
         uses: stats-organization/github-readme-stats-action@v2
         with:
@@ -36,8 +28,8 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add profile/stats.svg profile/top-langs.svg
+          git add profile/top-langs.svg
           if ! git diff --cached --quiet; then
-            git commit -m 'Refresh public profile stats [bot]'
+            git commit -m 'Refresh public language card [bot]'
             git push
           fi
