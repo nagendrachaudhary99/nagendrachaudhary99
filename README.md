@@ -28,8 +28,9 @@ I'm Nagendra, an **AI & full-stack software engineer** in San Francisco and a Co
 | Quest | What it proves | Explore |
 |:--|:--|:--|
 | **ResolveDesk** | AI support-resolution platform: policy-grounded replies with verified citations, human-in-the-loop for money movement, crash-safe and idempotent execution. **30/30 tests on real Postgres** (incl. crash-mid-refund), eval harness (routing **100%**, citation match **91%**), 500-ticket load test. Tickets are synthetic and the README says so. | [View code](https://github.com/nagendrachaudhary99/resolvedesk) |
-| **ProxyEval** | LLM evaluation harness on **8 real SEC DEF 14A filings** with **31 hand-checked gold labels**. Found a real parser failure, fixed it, locked it in with a regression test: critical-field accuracy **82.6% -> 91.3%**. | [View code](https://github.com/nagendrachaudhary99/Proxyeval) |
+| **ProxyEval** | LLM evaluation harness on **8 real SEC DEF 14A filings** with **31 hand-checked gold labels**. Found a real parser failure, fixed it, locked it in with a regression test: critical-field accuracy **82.6% -> 91.3%**. | _(code publishing soon)_ |
 | **Blackbox** | AI on-call incident investigator: turns raw outage logs into an evidence-cited timeline, ranks root-cause hypotheses against runbooks, drafts the postmortem. **50 tests**, honest eval scores, synthetic incidents disclosed. | [View code](https://github.com/nagendrachaudhary99/blackbox) |
+| **blaze-payment-guard** | Verification layer between money-moving AI agents and execution: duplicate, over-amount, currency, and unreferenced-payment checks, each carrying the amount at stake. | [View code](https://github.com/nagendrachaudhary99/blaze-payment-guard) |
 
 ### `> side quests`
 
@@ -43,7 +44,6 @@ I'm Nagendra, an **AI & full-stack software engineer** in San Francisco and a Co
 <details>
 <summary><b>More builds</b> - evaluation harnesses and safety gates for AI agents</summary>
 
-- [blaze-payment-guard](https://github.com/nagendrachaudhary99/blaze-payment-guard) - verification layer between money-moving agents and execution: duplicate, over-amount, and currency checks
 - [rational-ledger-recon](https://github.com/nagendrachaudhary99/rational-ledger-recon) - reconciliation and anomaly-detection gate for zero-human accounting
 - [lemonlime-outbound-qa](https://github.com/nagendrachaudhary99/lemonlime-outbound-qa) - pre-send quality gate for agent-drafted outbound messages
 - [pluto-profile-fidelity](https://github.com/nagendrachaudhary99/pluto-profile-fidelity) - fidelity measurement for voice-interview profile extraction, with hallucination and omission detection
